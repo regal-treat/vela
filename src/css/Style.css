@@ -1,0 +1,508 @@
+/* Header */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.npr {
+  padding-left: 23px;
+  padding-right: 0;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+header {
+  box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
+  position: relative;
+  z-index: 1;
+}
+
+header .header {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-brand h4 {
+  display: inline-block;
+  color: blue;
+}
+
+.header-brand div {
+  display: inline-block;
+}
+
+.header-search {
+  margin-left: 130px;
+  font-size: 11px;
+}
+
+.header-search input {
+  outline: none;
+  border: none;
+  margin-left: 9px;
+}
+
+.header-search i {
+  color: gray;
+}
+
+.header-menu {
+  text-align: right;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.header-menu div {
+  margin-right: 2.3rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-menu div:last-child {
+  margin-right: 0;
+}
+
+.header-menu .profile-pix {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.bell-badge {
+  background-color: blue;
+  padding: .23em .4em;
+  border-radius: 50px;
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  margin: -3px 0px 0px -7px;
+}
+
+.bell-menu {
+  position: relative;
+}
+
+.name {
+  margin-right: 8px !important;
+  position: relative;
+}
+
+.name small {
+  position: absolute;
+  display: block;
+  margin-top: -13px;
+  right: 0
+}
+
+.name p {
+  display: block;
+  margin-bottom: 0px;
+}
+
+/* Aside */
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+}
+
+aside {
+  min-width: 260px;
+  padding: 2rem 0;
+}
+
+aside ul li,
+aside p {
+  padding: .5rem 3rem;
+  font-size: 11px;
+}
+
+aside ul li.active {
+  font-size: 11px;
+  border-left: 3px solid #1875f0;
+  background-color: #ecf7f6;
+}
+
+
+aside p {
+  font-size: 11px;
+  margin: 0;
+}
+
+aside ul li .fa {
+  margin-right: 10px;
+}
+
+aside div {
+  margin-top: 2rem;
+}
+
+aside div:first-child {
+  margin-top: 0;
+}
+
+.btn-generate {
+  padding: 5px 28px;
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: #27ae60;
+  color: #fff;
+}
+
+/* Transaction card/graph */
+
+.transaction-card {
+  max-width: 246px;
+}
+
+.transaction-card:last-child {
+  margin-right: 0;
+}
+
+.col-max {
+  max-width: 255px;
+}
+
+.transaction-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: .9rem;
+}
+
+.transaction-card .card-body div:nth-child(2) {
+  position: relative;
+}
+
+.transaction-card .graph-line {
+  position: absolute;
+}
+
+.transaction-card div .title {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.transaction-card div .value {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  padding-right: 40px;
+  margin-right: auto;
+  max-width: 2000px;
+  display: flex;
+}
+
+.main .inner {
+  padding: 2rem 0 0 2.3rem;
+  max-width: 1030px;
+}
+
+/* Graphstat */
+.graph-card {
+  background: url('../images/gradient.png') bottom center no-repeat;
+}
+
+.crud-nav {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100px;
+}
+
+.crud-nav div {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+  background: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
+  border: 1px solid #CED0DA;
+}
+
+.crud-nav div:first-child {
+  margin-right: 10px;
+}
+
+.crud-nav div::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #222;
+  margin-left: -19px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: #CCCFD4;
+  border-top-color: #CCCFD4;
+  margin-top: 6px;
+}
+
+.crud-nav div:nth-child(1)::after {
+  transform: rotate(-136deg);
+  margin-left: -14px;
+}
+
+.crud-nav div:nth-child(2)::after {
+  transform: rotate(45deg);
+}
+
+.graph-select {
+  width: 138px;
+  height: 36px;
+  padding: 5px 10px;
+  border: 1px solid #DDE0E3;
+  border-radius: 4.25px;
+  vertical-align: super;
+}
+
+.plr {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.graph-dline div {
+  min-height: 203px;
+  border-right: 1px solid rgb(188, 241, 245);
+  background: transparent;
+  text-align: center;
+}
+
+.graph-dline div:last-child {
+  border-right: none
+}
+
+.graph-dline {
+  background: transparent;
+  padding-top: 3rem;
+}
+
+.graph-dline h6 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Order Payment */
+.order-payment-bar {
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #27AE60 80%, #FDC203 20%);
+  margin: 8px 0;
+}
+
+.select-option {
+  color: #1875f0;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.order-payment p {
+  margin-bottom: 4px;
+}
+
+.order-payment span {
+  font-weight: 500;
+}
+
+.text-yellow {
+  color: #FDC203;
+}
+
+.text-green {
+  color: #27ae60;
+}
+
+.text-blue {
+  color: blue;
+}
+
+/* Payment Table */
+
+.pymt div.item {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: #7f8fa4;
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pymt div.status {
+  height: 33px;
+  width: 120px;
+  border-radius: 30px;
+  position: relative;
+  padding: 5px 7px;
+  text-align: center;
+  border: 1px solid #CCCFD4;
+  text-align: center;
+  font-size: 12px;
+}
+
+.pymt div.status::before {
+  content: '';
+  height: 9px;
+  width: 9px;
+  border-radius: 30px;
+  position: absolute;
+  margin-left: -17px;
+  margin-top: 5px;
+}
+
+.pymt div.status.yellow {
+  color: #ebc315;
+}
+
+.pymt div.yellow::before {
+  background-color: #ebc315;
+  color: #ebc315;
+}
+
+.pymt div.status.green {
+  color: #27ae60;
+}
+
+.pymt div.green::before {
+  background-color: #27ae60;
+  color: #27ae60;
+}
+
+.pymt div.status.gray {
+  color: gray;
+}
+
+.pymt div.gray::before {
+  background-color: gray;
+  color: gray;
+}
+
+.pymt div.arrow {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pymt div.arrow::after {
+  transform: rotate(135deg);
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #222;
+  margin-left: -19px;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: #CCCFD4;
+  border-top-color: #CCCFD4;
+  margin-top: 6px;
+}
+
+.pymt table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pymt tbody tr {
+  border-bottom: 1px solid #cccfd4;
+}
+
+.pymt tbody tr td {
+  padding: .8rem;
+  background-color: white;
+}
+
+.pymt table th {
+  font-size: 14px;
+  font-weight: normal;
+  padding: .8rem;
+  background-color: #eaeef0;
+}
+
+select.drop-down {
+  border: 1px solid #ced0da;
+  border-radius: 2px;
+  font-size: 13px;
+  height: 30px;
+  background: transparent;
+  margin-left: 7px;
+}
+
+.drop-down-option {
+  padding: 5px 8px;
+}
+
+.drop-down option:hover {
+  background-color: #f4f4f4 !important;
+  -webkit-appearance: none;
+}
+
+.search-payments input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  margin-left: 9px;
+  padding-left: 2px;
+  font-size: 11px;
+  width: 90%;
+}
+
+.search-payments .fa {
+  color: gray;
+}
+
+.search-payments {
+  padding: 0px 0px 5px;
+  border-bottom: 0.5px solid #787878;
+}
+
+.table-footer {
+  padding: 20px 0;
+}
+
+.table-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.table-footer ul li {
+  display: inline-flex;
+  font-size: 13px;
+  padding: 10px;
+  border: 1px solid #ced0da;
+  border-radius: 2px;
+  height: 31px;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-footer ul li.active {
+  background: #1875f0;
+  color: #fff;
+}
